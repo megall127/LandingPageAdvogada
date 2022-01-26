@@ -1,0 +1,75 @@
+/* ************************
+   03.2: Footer
+   ********************* */
+
+   .footer {
+      position: relative;
+      .widget {
+         margin-bottom: 60px;
+         
+        .widget-title {
+            margin-bottom: 33px;
+         }
+      }
+   }
+
+   .footer-main {
+      padding: 80px 0 20px;
+      @include tab {
+         padding-top: 80px;
+      }
+   }
+
+   .footer-bottom {
+      padding: 30px 0;
+      .container {
+         position: relative;
+         &:after {
+            width: calc(100% - 30px);
+            height: 1px;
+            @extend %white-bg;
+            left: 15px;
+            top: -30px;
+            opacity: 0.15;
+            position: absolute;
+            content: "";
+         }
+      }
+
+      &.style--two {
+         .container {
+            &:after {
+               background-color: #000000;
+               opacity: 0.1;
+            }
+         }
+         .footer-bottom-content {
+            p {
+               a {
+                  @extend %c2;
+               }
+            }
+         }
+      }
+   }
+
+   .footer-bottom-content {
+      display: flex;
+      align-items: center;
+      @include mobileMd {
+         flex-direction: column;
+      }
+      p {
+         max-width: 555px;
+         a {
+            @extend %c1;
+         }
+      }
+      &.c4 {
+         p {
+            a {
+               color: #007BFC;
+            }
+         }
+      }
+   }

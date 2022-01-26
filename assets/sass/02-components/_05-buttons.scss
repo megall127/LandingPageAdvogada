@@ -1,0 +1,243 @@
+/* ************************
+   02.5: Buttons
+   ********************* */
+
+   .btn {
+      font-size: 14px;
+      text-transform: uppercase;
+      z-index: 1;
+      @extend %white;
+      @extend %c1-bg;
+      @extend %semi-bold;
+      @extend %trans3;
+      @extend %radius-50;
+      line-height: 1;
+      padding: 5px;
+      padding-left: 30px;
+      box-shadow: none;
+      outline: none;
+      display: inline-flex;
+      align-items: center;
+      white-space: nowrap;
+
+      svg, i, img {
+         margin-left: 15px;
+      }
+
+      svg {
+         width: 40px;
+         height: 40px;
+         @extend %white-bg;
+         @extend %radius;
+         padding: 12px;
+      }
+
+      &:hover {
+         @extend %white-bg;
+         @extend %c1;
+         svg {
+            @extend %c1-bg;
+            path {
+               fill: $white;
+            }
+         }
+      }
+      &:focus {
+         box-shadow: none;
+      }
+      &.hover-style-two {
+         &:hover {
+            @extend %title-color-bg;
+            @extend %white;
+            svg {
+               @extend %white-bg;
+               path {
+                  fill: $title-color;
+               }
+            }
+         }
+      }
+      &.header-btn {
+         padding: 13px 28px;
+         text-transform: uppercase;
+         font-size: 13px;
+         border: 1px solid $white;
+         background-color: transparent;
+         &:hover {
+            @extend %white-bg;
+            @extend %c1;
+         }
+      }
+      &.btn-lg {
+         padding: 20px 40px;
+      }
+      &.btn-white {
+         @extend %title-color;
+         @extend %white-bg;
+         svg {
+            g {
+               stroke: $title-color;
+            }
+            path {
+               fill: $title-color;
+               stroke: transparent;
+            }
+         }
+         &:hover {
+            @extend %white;
+            @extend %c1-bg;
+            svg {
+               g {
+                  stroke: $white;
+               }
+               path {
+                  fill: $white;
+                  stroke: transparent;
+               }
+            }
+         }
+      }
+      &.btn-sm {
+         font-size: 12px;
+         padding: 4px;
+         padding-left: 24px;
+         svg {
+            width: 35px;
+            height: 35px;
+         }
+         span {
+            top: 1px;
+         }
+      }
+      &.btn-border {
+         background-color: transparent;
+         border-color: $c2;
+         @extend %title-color;
+         text-transform: capitalize;
+         font-size: 14px;
+         padding: 14px 30px 15px;
+         &:hover {
+            @extend %c2-bg;
+            border-color: $c2;
+            @extend %white;
+         }
+      }
+      &.btn-green {
+         @extend %c2-bg;
+         border-color: $c2;
+         @extend %white;
+         text-transform: capitalize;
+         font-size: 17px;
+         padding: 18px 36px 19px;
+         &:hover {
+            background-color: #F76D00;
+            border-color: #F76D00;
+            @extend %white;
+         }
+      }
+      &.btn-orange {
+         background-color: #F76D00;
+         border-color: #F76D00;
+         @extend %white;
+         text-transform: capitalize;
+         font-size: 17px;
+         padding: 18px 36px 19px;
+         &:hover {
+            @extend %c2-bg;
+            border-color: $c2;
+            @extend %white;
+         }
+         
+         &.btn-border {
+            background-color: transparent;
+            border-color: #F76D00;
+            color: #F76D00;
+            &:hover {
+               background-color: #F76D00;
+               border-color: #F76D00;
+               @extend %white;
+            }
+         }
+      }
+      &.btn-orange {
+         background-color: #F76D00;
+         border-color: #F76D00;
+         @extend %white;
+         text-transform: capitalize;
+         font-size: 17px;
+         padding: 18px 36px 19px;
+         &:hover {
+            @extend %c2-bg;
+            border-color: $c2;
+            @extend %white;
+         }
+      }
+      &.btn-style3 {
+         background-color: transparent;
+         border-color: #00C3FF;
+         color: #00C3FF;
+         @extend %radius-5;
+         padding: 18px 38px;
+         &:hover {
+            background-color: #00C3FF;
+            border-color: #00C3FF;
+            @extend %white;
+         }
+      }
+      &.btn-style4 {
+         background-color: #0364FF;
+         border-color: #0364FF;
+         @extend %white;
+         @extend %radius-50;
+         padding: 18px 38px;
+         &:hover {
+            background-color: transparent;
+            border-color: #0364FF;
+            color: #0364FF;
+         }
+         &.btn-border {
+            background-color: transparent;
+            border-color: #0364FF;
+            color: #0364FF;
+            &:hover {
+               background-color: #0364FF;
+               border-color: #0364FF;
+               @extend %white;
+            }
+         }
+      }
+   }
+
+   //Button Circle
+   .btn-circle {
+      width: 45px;
+      height: 45px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      @extend %title-color-bg;
+      @extend %radius;
+      &:hover {
+         @extend %c1-bg;
+      }
+   }
+
+   /* Button Inline */
+   .btn-inline {
+      color: #818181;
+      svg, i {
+         margin-left: 5px;
+      }
+      &:hover {
+         svg path {
+            fill: $c1;
+         }
+      }
+      &.icon-left {
+         svg, i {
+            margin-left: 0;
+            margin-right: 5px;
+         }
+      }
+   }

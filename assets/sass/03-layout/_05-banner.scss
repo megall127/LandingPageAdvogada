@@ -1,0 +1,339 @@
+/* ************************
+   03.6: Banner
+   ********************* */
+
+   .banner-shape {
+      width: 100%;
+      height: auto;
+      left: 0;
+      bottom: -1px;
+      position: absolute;
+   }
+
+   .banner-content {
+      h1 {
+         margin-bottom: 40px;
+         font-size: 55px;
+         font-weight: $black-bold;
+         line-height: 1.2;
+         letter-spacing: -1px; 
+         .typed-wrap {
+            @extend %c1;
+         }
+         @include mobileSm {
+            font-size: 48px;
+         }
+      }
+      p {
+         margin-bottom: 42px;
+         font-size: 17px;
+      }
+      .banner-price {
+         position: relative;
+         display: inline-block;
+         &:after {
+            width: 165px;
+            height: 18px;
+            left: -10px;
+            bottom: -17px;
+            position: absolute;
+            content: "";
+            background-image: url(../img/icon/banner-price-shape.png);
+            background-size: contain;
+         }
+      }
+
+      @include mobileLg {
+         br {
+            display: none;
+         }
+      }
+      &.text-white {
+         h1 {
+            @extend %white;
+         }
+         p {
+            @extend %white;
+         }
+      }
+   }
+
+   .banner-img {
+      position: relative;
+      display: inline-block;
+      padding-left: 30px;
+      @include tab {
+         padding-left: 0;
+      }
+      .main-img {
+         max-width: initial;
+      }
+      img {
+         transition: all .1s linear;
+         &:not(.main-img) {
+            position: absolute;
+            left: 0;
+            top: 53%;
+         }
+         &.monitor-img {
+            left: 35px;
+            top: 32%;
+         }
+         &.text-img {
+            left: 81%;
+            top: 48%;
+            @include customMax(1199) {
+               left: 97%;
+            }
+         }
+         &.box1-img {
+            left: 107%;
+            top: 46%;
+            animation: levitate 2.5s ease-in-out .4s infinite forwards;
+            
+            @include customMax(1199) {
+               left: 128%;
+               top: 47%;
+            }
+         }
+         &.box2-img {
+            left: 97%;
+            top: 35%;
+            animation: levitate 2.5s ease-in-out .6s infinite forwards;
+            @include customMax(1199) {
+               left: 118%;
+               top: 35%;
+            }
+         }
+         &.box3-img {
+            left: 53%;
+            top: 13%;
+            animation: levitate 2.5s ease-in-out .1s infinite forwards;
+            @include customMax(1199) {
+               left: 62%;
+            }  
+         }
+         &.box4-img {
+            left: 63%;
+            top: 11%;
+            animation: levitate 2.5s ease-in-out infinite;
+            @include customMax(1199) {
+               left: 76%;
+            }   
+         }
+      }
+   }
+
+   .banner-btn-group {
+      display: flex;
+      align-items: center;
+      @include mobileSm {
+         flex-direction: column;
+         align-items: flex-start;
+      }
+      .btn {
+         &:not(:last-child) {
+            margin-right: 25px;
+            @include mobileSm {
+               margin-right: 0;
+               margin-bottom: 25px;
+            }
+         }
+      }
+   }
+
+   .banner {
+      padding-top: 148px;
+      padding-bottom: 230px;
+      min-height: 952px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      @include tab {
+         padding-top: 180px;
+      }
+      &.banner-bg {
+         @include horizontal-gradient(#1D0F9B, #00C3FF);
+      }
+
+      &.style--two {
+         padding-bottom: 0;
+         background-size: cover;
+         min-height: auto;
+         overflow: visible;
+         padding-top: 200px;
+         margin-bottom: 100px;
+         @include mobileMd {
+            padding-top: 160px;
+         }
+         @include mobileSm {
+            margin-bottom: 0;
+            padding-bottom: 50px;
+         }
+         .banner-img {
+            padding-left: 0;
+            display: block;
+            text-align: center;
+            img {
+               position: static;
+               margin-bottom: -100px;
+               @include mobileSm {
+                  margin-bottom: 0;
+               }
+            }
+         }
+         .banner-content {
+            h1 {
+               @extend %c2;
+               margin-bottom: 25px;
+            }
+            p {
+               max-width: 744px;
+               margin: 0 auto 42px;
+               @extend %title-color;
+            }
+         }
+
+         .banner-btn-group {
+            .btn-green, .btn-orange {
+               &:hover {
+                  @extend %white-bg;
+                  border-color: $white;
+                  @extend %c2;
+                  @extend %box-shadow;
+               }
+            }
+            .btn {
+               &:not(:last-child) {
+                  margin-right: 20px;
+               }
+            }
+            @include mobileSm {
+               align-items: center;
+               .btn {
+                  &:not(:last-child) {
+                     margin-right: 0;
+                     margin-bottom: 16px;
+                  }
+               }
+            }
+         }
+      }
+      &.style--three {
+         min-height: 1056px;
+         padding-top: 200px;
+         padding-bottom: 310px;
+
+         .banner-content {
+            h1 {
+               font-size: 90px;
+               margin-bottom: 15px;
+               @include mobileMd {
+                  font-size: 60px;
+               }
+            }
+            p {
+               font-size: 24px;
+               margin-bottom: 56px;
+               @include mobileMd {
+                  font-size: 18px;
+                  margin-bottom: 46px;
+               }
+            }
+         }
+
+         .banner-img {
+            padding-left: 0;
+            margin-left: -30px;
+            img {
+               &:not(.main-img) {
+                  position: absolute;
+                  left: 30px;
+                  top: 38%;
+                  &.men-img2 {
+                     left: 54%;
+                     top: 81%;
+                  }
+                  &.men-img3 {
+                     left: 113%;
+                     top: 37%;
+                  }
+               }
+            }
+            
+         }
+
+         .banner-btn-group {
+            .btn {
+               background-color: #00C3FF;
+               @extend %white;
+               &:hover {
+                  @extend %white-bg;
+                  border-color: $white;
+                  color: #00C3FF;
+                  @extend %box-shadow;
+               }
+            }
+            @include mobileSm {
+               // align-items: center;
+               .btn {
+                  &:not(:last-child) {
+                     margin-bottom: 16px;
+                  }
+               }
+            }
+         }
+      }
+      &.style--four {
+         @include angle-gradient(-45, #123FC0, #1145D9);
+         padding-top: 190px;
+         @include mobileLg {
+            padding-top: 160px;
+         }
+         .banner-img {
+            padding-left: 0;
+            img {
+               @include tab {
+                  max-width: 100%;
+               }
+            }
+         }
+         .banner-content {
+            h1 {
+               @include customMq(992, 1199) {
+                  font-size: 46px;
+               }
+            }
+         }
+         .banner-btn-group {
+            .btn.btn-style4 {
+               background-color: transparent;
+               border-color: $white;
+               &:hover {
+                  @extend %white-bg;
+                  border-color: $white;
+                  color: #0364FF;
+               }
+            }
+         }
+      }
+   }
+
+
+   /* Add custom cursor so it auto inherits font styles */
+   .typed::after {
+      content: '';
+      display: inline-block;
+      animation: blink 0.7s infinite;
+      width: 2px;
+      height: 40px;
+      @extend %c1-bg;
+   }
+
+   /* Removes cursor that comes with typed.js */
+   .typed-cursor{
+      opacity: 0;
+      display: none;
+   }

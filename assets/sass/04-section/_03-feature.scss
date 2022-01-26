@@ -1,0 +1,61 @@
+/* ************************
+   04.3: Feature
+   ********************* */
+
+   .feature-content {
+       .feature-list {
+           margin-bottom: 42px;
+       }
+   }
+
+    .feature-img {
+        img {
+            max-width: initial;
+            @include medium {
+                max-width: 100%;
+            }
+            &.ms-lg-n100 {
+                margin-left: -100px;
+                @include medium {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    .featured-items {
+        > .row {
+            [class*="col-"] {
+                &:nth-child(2) {
+                    margin-top: 80px;
+                    @include mobileLg {
+                        margin-top: 0;
+                    }
+                }
+                &:nth-child(3) {
+                    margin-top: -80px;
+                    @include mobileLg {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .featured-item {
+        @extend %white-bg;
+        @extend %box-shadow2;
+        padding: 45px 30px 42px;
+        margin-bottom: 30px;
+        @include mobileLg {
+            text-align: center;
+        }
+        .icon {
+            margin-bottom: 30px;
+        }
+        .content {
+            h3 {
+                margin-bottom: 24px;
+            }
+        }
+    }

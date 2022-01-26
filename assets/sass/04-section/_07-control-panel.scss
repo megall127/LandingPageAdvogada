@@ -1,0 +1,124 @@
+/* ************************
+   04.7: Control Panel
+   ********************* */
+
+    .control-panel-accordion {
+        padding-right: 15px;
+        @include medium {
+            padding-right: 0;
+        }
+        .accordion-item {
+            background-color: #CEFCE9;
+            border-radius: 5px;
+            &:nth-child(2) {
+                background-color: #FFF7F2;
+                .accordion-button {
+                    &:not(.collapsed) {
+                        color: #F76D00;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                background-color: #F7F6FE;
+                .accordion-button {
+                    &:not(.collapsed) {
+                        color: #6B58ED;
+                    }
+                }
+            }
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        .accordion-button {
+            padding: 30px 30px;
+            font-size: 21px;
+            border: none;
+            cursor: pointer;
+            @extend %trans3;
+            &:not(.collapsed) {
+                color: #03A87C;
+                background-color: transparent;
+                padding-top: 45px;
+                padding-bottom: 18px;
+            }
+            &:after {
+                display: none;
+            }
+
+            svg {
+                margin-right: 14px;
+            }
+        }
+        .accordion-collapse {
+            border: none;
+            .accordion-body {
+                padding: 0 40px 40px 80px;
+            }
+        }
+
+        &.style--two {
+            .accordion-item {
+                background-color: rgba(#00C3FF, .3);
+            }
+            .accordion-button {
+                color: #00C3FF !important;
+                background-color: $white;
+                border: 1px solid #00C3FF;
+                @extend %radius-5;
+                &:not(.collapsed) {
+                    background-color: transparent;
+                    border-color: transparent;
+                }
+            }
+            .accordion-collapse {
+                border: none;
+                .accordion-body {
+                    padding: 0 40px 40px 80px;
+                }
+            }
+        }
+    }
+
+    .control-panel-img {
+        padding-left: 10px;
+        @include medium {
+            padding-left: 0;
+        }
+        @include mobileSm {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        img {
+            max-width: initial;
+            margin-top: -45px;
+            margin-bottom: -45px;
+            @include tab {
+                margin-top: 0;
+                max-width: 100%;
+            }
+        }
+    }
+
+    .control-panel-content-wrap {
+        ul {
+            @extend %list-unstyled;
+            li {
+                &:not(:last-child) {
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+
+    .control-panel-content {
+        .icon {
+            margin-right: 24px;
+        }
+        .content {
+            h3 {
+                margin-bottom: 24px;
+                @extend %black-bold;
+            }
+        }
+    }

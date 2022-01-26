@@ -1,0 +1,44 @@
+/* ************************
+   04.10: Team
+   ********************* */
+
+   .team-carousel {
+       .owl-stage-outer {
+           margin: 0 -30px;
+           padding: 0 30px 58px;
+           @include mobileLg {
+               margin: 0 -15px;
+               padding: 0 15px 58px;
+           }
+       }
+   }
+
+    .single-team {
+        margin-bottom: 30px;
+        .team-img {
+            img {
+                @extend %radius-10;
+                width: 100%;
+            }
+        }
+
+        .team-content {
+            @extend %white-bg;
+            @extend %radius-5;
+            @extend %box-shadow2;
+            width: calc(100% - 60px);
+            position: relative;
+            left: 30px;
+            padding: 26px 15px 28px;
+            text-align: center;
+            margin-top: -57px;
+            h3 {
+                margin-bottom: 8px;
+            }
+            p {
+                @extend %semi-bold;
+                @extend %c1;
+                font-size: 15px;
+            }
+        }
+    }

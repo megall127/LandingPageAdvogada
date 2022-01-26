@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="68" height="61" viewBox="0 0 68 61">
+  <g id="feature-icon1" transform="translate(-915 -1313)">
+    <path id="Path_11153" data-name="Path 11153" d="M409.248,193.185q.2-.96.3-1.921a24.384,24.384,0,0,0-8.665-20.991c-17.064-14.122-48.634-7.275-57.241,13.2-3.528,8.394-.868,18.1,3.569,26.079a30.474,30.474,0,0,0,7.957,9.825c5.949,4.472,14.193,5.384,21.486,3.588C389.563,219.789,406.441,206.68,409.248,193.185Z" transform="translate(572.986 1150.169)" fill="#f4f6f8"/>
+    <line id="Line_70" data-name="Line 70" y2="58" transform="translate(938.5 1315.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_71" data-name="Line 71" y2="60" transform="translate(950.5 1313.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_72" data-name="Line 72" y2="53" transform="translate(962.5 1314.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_73" data-name="Line 73" y2="35" transform="translate(974.5 1321.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_70-2" data-name="Line 70" x2="43" transform="translate(927.5 1361.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_71-2" data-name="Line 71" x2="52" transform="translate(927.5 1349.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_72-2" data-name="Line 72" x2="55" transform="translate(927.5 1337.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line_73-2" data-name="Line 73" x2="50" transform="translate(927.5 1325.5)" fill="none" stroke="#edeff3" stroke-linecap="round" stroke-width="1"/>
+    <g id="Group_4103" data-name="Group 4103" transform="translate(-21.503 887.5)">
+      <rect id="Rectangle_3597" data-name="Rectangle 3597" width="1.5" height="1.5" transform="translate(939.503 447.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3598" data-name="Rectangle 3598" width="1.5" height="1.5" transform="translate(942.502 447.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3599" data-name="Rectangle 3599" width="1.5" height="1.5" transform="translate(939.503 444.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3600" data-name="Rectangle 3600" width="1.5" height="1.5" transform="translate(942.502 444.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3601" data-name="Rectangle 3601" width="1.5" height="1.5" transform="translate(945.503 447.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3602" data-name="Rectangle 3602" width="1.5" height="1.5" transform="translate(945.503 444.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3603" data-name="Rectangle 3603" width="1.5" height="1.5" transform="translate(948.502 447.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3604" data-name="Rectangle 3604" width="1.5" height="1.5" transform="translate(948.502 444.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3605" data-name="Rectangle 3605" width="1.5" height="1.5" transform="translate(951.503 447.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3606" data-name="Rectangle 3606" width="1.5" height="1.5" transform="translate(951.503 444.5)" fill="#0364ff"/>
+      <path id="Path_11154" data-name="Path 11154" d="M964.253,444.5H957.5a.749.749,0,0,0-.749.75v3a.749.749,0,0,0,.749.75h6.751a.749.749,0,0,0,.749-.75v-3a.749.749,0,0,0-.749-.75Zm-.751,3h-5.249V446H963.5Zm0,0" fill="#0364ff"/>
+      <rect id="Rectangle_3607" data-name="Rectangle 3607" width="1.5" height="1.5" transform="translate(939.503 456.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3608" data-name="Rectangle 3608" width="1.5" height="1.5" transform="translate(942.502 456.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3609" data-name="Rectangle 3609" width="1.5" height="1.5" transform="translate(939.503 453.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3610" data-name="Rectangle 3610" width="1.5" height="1.5" transform="translate(942.502 453.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3611" data-name="Rectangle 3611" width="1.5" height="1.5" transform="translate(945.503 456.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3612" data-name="Rectangle 3612" width="1.5" height="1.5" transform="translate(945.503 453.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3613" data-name="Rectangle 3613" width="1.5" height="1.5" transform="translate(948.502 456.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3614" data-name="Rectangle 3614" width="1.5" height="1.5" transform="translate(948.502 453.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3615" data-name="Rectangle 3615" width="1.5" height="1.5" transform="translate(951.503 456.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3616" data-name="Rectangle 3616" width="1.5" height="1.5" transform="translate(951.503 453.5)" fill="#0364ff"/>
+      <path id="Path_11155" data-name="Path 11155" d="M964.253,453.5H957.5a.749.749,0,0,0-.749.75v3a.749.749,0,0,0,.749.75h6.751a.749.749,0,0,0,.749-.75v-3a.749.749,0,0,0-.749-.75Zm-.751,3h-5.249V455H963.5Zm0,0" fill="#0364ff"/>
+      <path id="Path_11156" data-name="Path 11156" d="M981.318,465.755l-5.25-6a.757.757,0,0,0-.565-.256h-7.639a2.2,2.2,0,0,0,.139-.75v-6a2.216,2.216,0,0,1,0-3v-6a2.253,2.253,0,0,0-2.25-2.25h-27a2.252,2.252,0,0,0-2.249,2.25v6a2.216,2.216,0,0,1,0,3v6a2.216,2.216,0,0,1,0,3v6a2.252,2.252,0,0,0,2.249,2.25h12.565l13.1,16.221c.011.014.029.019.042.033a.733.733,0,0,0,.178.141c.025.013.047.028.073.039a.728.728,0,0,0,.29.066.738.738,0,0,0,.292-.066.61.61,0,0,0,.071-.039.742.742,0,0,0,.18-.141c.012-.014.03-.019.042-.033l15.75-19.5a.753.753,0,0,0-.019-.966ZM979.1,465.5h-7.194l3.6-4.111Zm-5.25-4.5-3.6,4.111-3.6-4.111Zm-17.694,0h7.193l-3.6,4.111Zm1.943,4.5h-7.193l3.6-4.111Zm6.9-4.111,3.6,4.111h-7.195ZM938,443.75a.751.751,0,0,1,.749-.75h27a.751.751,0,0,1,.75.75v6a.751.751,0,0,1-.75.75h-27a.751.751,0,0,1-.749-.75Zm0,9a.751.751,0,0,1,.749-.75h27a.751.751,0,0,1,.75.75v6a.751.751,0,0,1-.75.75h-27a.751.751,0,0,1-.749-.75Zm.749,15.75a.751.751,0,0,1-.749-.75v-6a.751.751,0,0,1,.749-.75h14.1l-3.938,4.5h-.41V467h.392l1.211,1.5Zm12.07-1.5h8.355l4.178,15.517ZM965,482.865,960.732,467h8.542Zm1.648-.348L970.828,467h8.355Zm0,0" fill="#0364ff"/>
+      <rect id="Rectangle_3617" data-name="Rectangle 3617" width="1.5" height="1.5" transform="translate(939.503 465.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3618" data-name="Rectangle 3618" width="1.5" height="1.5" transform="translate(942.502 465.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3619" data-name="Rectangle 3619" width="1.5" height="1.5" transform="translate(939.503 462.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3620" data-name="Rectangle 3620" width="1.5" height="1.5" transform="translate(942.502 462.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3621" data-name="Rectangle 3621" width="1.5" height="1.5" transform="translate(945.503 465.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3622" data-name="Rectangle 3622" width="1.5" height="1.5" transform="translate(945.503 462.5)" fill="#0364ff"/>
+      <rect id="Rectangle_3623" data-name="Rectangle 3623" width="1.5" height="1.5" transform="translate(948.502 462.5)" fill="#0364ff"/>
+      <path id="Path_11157" data-name="Path 11157" d="M978.5,452a3,3,0,0,1-3-3,.75.75,0,1,0-1.5,0,3,3,0,0,1-3,3,.75.75,0,0,0,0,1.5,3,3,0,0,1,3,3,.75.75,0,1,0,1.5,0,3,3,0,0,1,3-3,.75.75,0,1,0,0-1.5Zm-3.75,2.015a4.536,4.536,0,0,0-1.265-1.265,1.266,1.266,0,0,1,2.531,0,4.552,4.552,0,0,0-1.266,1.265Zm0,0" fill="#0364ff"/>
+      <path id="Path_11158" data-name="Path 11158" d="M953,477.5a3,3,0,0,1-3-3,.75.75,0,1,0-1.5,0,3,3,0,0,1-3,3,.75.75,0,1,0,0,1.5,3,3,0,0,1,3,3,.75.75,0,1,0,1.5,0,3,3,0,0,1,3-3,.75.75,0,0,0,0-1.5Zm-3.75,2.015a4.565,4.565,0,0,0-1.266-1.265,1.266,1.266,0,0,1,2.531,0,4.522,4.522,0,0,0-1.265,1.265Zm0,0" fill="#0364ff"/>
+      <path id="Path_11159" data-name="Path 11159" d="M980.753,481.25a3,3,0,0,1-3-3,.75.75,0,0,0-1.5,0,3,3,0,0,1-3,3,.75.75,0,1,0,0,1.5,3,3,0,0,1,3,3,.75.75,0,0,0,1.5,0,3,3,0,0,1,3-3,.75.75,0,0,0,0-1.5ZM977,483.265A4.565,4.565,0,0,0,975.737,482a1.266,1.266,0,0,1,2.531,0A4.522,4.522,0,0,0,977,483.265Zm0,0" fill="#0364ff"/>
+    </g>
+  </g>
+</svg>

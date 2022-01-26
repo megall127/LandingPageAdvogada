@@ -1,0 +1,46 @@
+/* ************************
+   04.9: FAQ
+   ********************* */
+
+    .faq-accordion {
+        margin-top: -5px;
+        .accordion-item {
+            border-bottom: 1px solid rgba(#1045DB, 0.07);
+            padding-left: 20px;
+            @include medium {
+                padding-left: 0;
+            }
+        }
+        .accordion-header {
+            .accordion-button {
+                background-color: transparent;
+                padding: 25px 0;
+                padding-right: 30px;
+                font-size: 21px;
+                border: none;
+                @extend %trans3;
+                cursor: pointer;
+                &:after {
+                    background-image: url(../img/icon/accordion-plus.svg);
+                    margin-right: -30px;
+                }
+                &:not(.collapsed) {
+                    @extend %title-color;
+                    background-color: transparent;
+                    &:after {
+                        background-image: url(../img/icon/accordion-minus.svg);
+                        margin-top: -16px;
+                    }
+                }
+            }
+        }
+        .accordion-body {
+            padding: 0 60px 22px 0;
+            @include mobileSm {
+                padding: 0 0 22px 0;
+            }
+        }
+        .accordion-collapse {
+            border: none;
+        }
+    }

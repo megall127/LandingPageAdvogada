@@ -1,0 +1,416 @@
+/* ************************
+   04.4: Hosting
+   ********************* */
+
+.hosting-banner {
+    min-height: 795px;
+    padding-top: 232px;
+    padding-bottom: 100px;
+    display: flex;
+    align-items: center;
+    @include tab {
+        background-position: 0 0;
+    }
+    @include mobileLg {
+        min-height: 600px;
+    }
+}
+
+.hosting-banner-content {
+    * {
+        @extend %white;
+    }
+    h3 {
+        margin-bottom: 13px;
+    }
+    h2 {
+        margin-bottom: 28px;
+        font-size: 55px;
+        @extend %black-bold;
+    }
+    p {
+        &:not(:last-child) {
+            margin-bottom: 42px;
+        }
+    }
+}
+
+.hosting-specification-nav {
+    @include tab {
+        margin-bottom: 60px;
+    }
+    button {
+        @extend %box-shadow2;
+        @extend %heading-font;
+        @extend %white-bg;
+        font-size: 21px;
+        padding: 20px;
+        width: 100%;
+        max-width: 285px;
+        text-align: left;
+        position: relative;
+        @extend %trans3;
+        @include tab {
+            max-width: initial;
+        }
+        &:after {
+            width: 3px;
+            height: 0px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            @extend %c1-bg;
+            content: "";
+            position: absolute;
+            @extend %trans3;
+        }
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &.active {
+            @extend %c1;
+            box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.07);
+            &:after {
+                height: 35px;
+            }
+        }
+    }
+}
+
+.hosting-specification-tab-content {
+    margin-bottom: -58px;
+}
+
+.single-specification {
+    margin-bottom: 54px;
+    .specification-icon {
+        margin-bottom: 30px;
+    }
+    .specification-content{
+        h3 {
+            margin-bottom: 18px;
+        }
+        p {
+            @extend %title-color;
+        }
+    }
+}
+
+.price-left-content {
+    @include tab {
+        margin-bottom: 60px;
+    }
+    h2 {
+        font-size: 48px;
+        @extend %black-bold;
+        margin-bottom: 28px;
+    }
+    
+    .pricing-toogle {
+        margin: 26px 0;
+    }
+
+    .money-back {
+        margin-bottom: 42px;
+        font-size: 18px;
+    }
+}
+
+.pricing-toogle {
+    display: flex;
+    align-items: center;
+    .toggler {
+        @extend %title-color;
+        @extend %trans3;
+        @extend %semi-bold;
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .toggle {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 42px;
+        height: 22px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin: 0 16px;
+        border: 1px solid $c1;
+    }
+    .check {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 6;
+    }
+    .switch {
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        bottom: 4px;
+        right: 57.5%;
+        @extend %radius;
+        @extend %c1-bg;
+        z-index: 1;
+        transition-property: left, right;
+        // transition-delay: 0s,.08s;
+        transition-delay: .08s,0s;
+        transition: .25s cubic-bezier(.785,.135,.15,.86);
+    }
+    .check:checked~.switch {
+        right: 4px;
+        left: 57.5%;
+    }
+}
+
+.private-server-table {
+    white-space: nowrap;
+    &.table-striped>tbody>tr:nth-of-type(even) {
+        --bs-table-accent-bg: #F7F7F7;
+    }
+    th, td {
+        border: none;
+        vertical-align: middle;
+        @extend %body-font;
+        &:first-child {
+            border-radius: 5px 0 0 5px;
+        }
+        &:last-child {
+            border-radius: 0 5px 5px 0;
+        }
+        .btn {
+            padding: 3px;
+            padding-left: 24px;
+            opacity: 0;
+            visibility: hidden;
+            svg {
+                width: 28px;
+                height: 28px;
+                padding: 8px;
+                margin-left: 11px;
+            }
+            &.active {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+    thead {
+        @include horizontal-gradient(#1D0F9B, #00C3FF);
+        th {
+            @extend %white;
+            text-transform: uppercase;
+            font-size: 15px;
+            @extend %semi-bold;
+            padding: 20px 10px;
+        }
+    }
+    tbody {
+        tr {
+            &:hover {
+                .btn {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            td {
+                padding: 15px 10px;
+            }
+        }
+    }
+}
+
+
+.data_center_location-map {
+    position: relative;
+    display: inline-block;
+
+    .l_info {
+        position: absolute;
+        left: 10%;
+        top: 24%;
+
+        &.l_info2 {
+            left: 36%;
+            top: 66%;
+        }
+        &.l_info3 {
+            left: 38%;
+            top: 10px;
+        }
+        &.l_info4 {
+            left: 50%;
+            top: 35%;
+        }
+        &.l_info5 {
+            left: 80%;
+            top: 16%;
+        }
+        &.l_info6 {
+            left: 94%;
+            top: 88%;
+        }
+        &.l_info7 {
+            left: 28%;
+            top: 27%;
+        }
+        &.l_info8 {
+            left: 57%;
+            top: 58%;
+        }
+        &.l_info9 {
+            left: 74%;
+            top: 47%;
+        }
+        &.l_info10 {
+            left: 94%;
+            top: 18%;
+        }
+        &.l_info11 {
+            left: 63%;
+            top: 18%;
+        }
+        &.l_info12 {
+            left: 83%;
+            top: 75%;
+        }
+
+        .circle-ball {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            @extend %c1-bg;
+            border-radius: 50%;
+            z-index: 1;
+            position: relative;
+            cursor: pointer;
+            &:after {
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                @extend %c1-bg;
+                border-radius: 50%;
+                z-index: -1;
+                transform: scale(1);
+                animation: ripple2 1.5s 0s infinite;
+            }
+        }
+
+        .info-box {
+            @extend %white-bg;
+            padding: 8px 15px;
+            position: relative;
+            @extend %box-shadow;
+            @extend %radius-5;
+            position: absolute;
+            width: max-content;
+            transform: translateX(-50%);
+            left: 0;
+            bottom: 20px;
+            @extend %trans5;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1;
+            &:after {
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-top: 12px solid $white;
+                position: absolute;
+                content: "";
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            h5 {
+                @extend %semi-bold;
+                @extend %body-font;
+                font-size: 15px;
+            }
+        }
+        
+        &.active {
+            .info-box {
+                opacity: 1;
+                visibility: visible;
+                bottom: 30px;
+            }
+        }
+    }
+
+    &.style--two {
+        .l_info {
+            .info-box {
+                @extend %c2-bg;
+                @extend %white;
+                h5 {
+                    @extend %white;
+                }
+                &:after {
+                    border-top: 12px solid $c2;
+                }
+            }
+
+            .circle-ball {
+                @extend %c2-bg;
+                &:after {
+                    @extend %c2-bg;
+                }
+            }
+        }
+    }
+
+    &.style--three {
+        .l_info {
+            .info-box {
+                background-color: #0364FF;
+                @extend %white;
+                h5 {
+                    @extend %white;
+                }
+                &:after {
+                    border-top: 12px solid #0364FF;
+                }
+            }
+
+            .circle-ball {
+                background-color: #0364FF;
+                &:after {
+                    background-color: #0364FF;
+                }
+            }
+        }
+    }
+
+    &.style--four {
+        .l_info {
+            .info-box {
+                background-color: $c1;
+                @extend %white;
+                h5 {
+                    @extend %white;
+                }
+                &:after {
+                    border-top: 12px solid $c1;
+                }
+            }
+
+            .circle-ball {
+                background-color: $c1;
+                &:after {
+                    background-color: $c1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+.yellow-tiitle{
+    color: #cdba6d;
+}
+
+.square{
+    height: 300px;
+    width: auto;
+    background-color: #353e47;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.square1{
+    height: 300px;
+    width: auto;
+    background-color: #323a43;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.square2{
+    height: 300px;
+    width: auto;
+    background-color: #2e353d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTittle{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.boxTittle{
+    font-size: 20px;
+    color: white;
+    z-index: 9;
+    font-family: 'Playfair Display', serif;
+}
+.linhaBox{
+    height: 1px;
+    width: 80px;
+    background-color: #cdba6d;
+    margin: 20px;
+}
+.boxSubTittle{
+    width: 200px;
+    color: white;
+    font-size: 15px;
+}
+.boxSubTittleBlack{
+    width: 200px;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.mediaText{
+    display: flex;
+    flex-direction: column;
+}
+
+.boxDescriptionNegrito{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+.boxDescription{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.img-custom{
+    height: auto;
+}
+
+.bk-color{
+    background-color: #2e353d;
+}
+.bk-color-white{
+    background-color: #ffffff;
+}
+
+.row-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tittle-footer{
+    font-size: 20px;
+    color: white;
+}
+.infos-footer{
+    font-size: 14px;
+    color: white;
+}
+
+.padding-footer{
+    padding: 0 5rem;
+}
+
+@media screen and (max-width: 414px){
+    .text-sm-center {
+        text-align: center;
+        margin: 15px;
+    }
+}
+@media screen and (max-width: 414px){
+    .padding-footer{
+        margin: 15px;
+    }
+}

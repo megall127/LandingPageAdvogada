@@ -1,0 +1,181 @@
+// Transitions
+%trans3 {
+    transition: 0.3s ease-in-out;
+}
+
+%trans5 {
+    transition: 0.5s ease-in-out;
+}
+
+// Background Cover
+%bg-cover {
+    background-size: cover;
+    background-position: center;
+}
+
+//Width 0
+%w-0 {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    left: 0;
+    top: 0;
+}
+
+//List
+%list-unstyled {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+%list-inline {
+    @extend %list-unstyled;
+    li {
+        display: inline-block;
+    }
+}
+
+%button-round {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 50px;
+    height: 50px;
+    background-color: #fff8ec;
+    border: 1px solid transparent;
+    &:hover {
+        border-color: #ffdbd5;
+    }
+}
+
+//Input Style
+%input-style {
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    padding: 0 15px;
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #fbfbfb;
+}
+
+%input-style-focus {
+    border-color: #ffdbd5;
+    background-color: #fff;
+    &::placeholder {
+        color: $text-color !important;
+    }
+}
+
+%regular {
+    font-weight: $regular;
+}
+
+%medium {
+    font-weight: $medium;
+}
+ 
+%semi-bold {
+    font-weight: $semi-bold;
+}
+
+%bold {
+    font-weight: $bold;
+}
+
+%black-bold {
+    font-weight: $black-bold;
+}
+ 
+%c1 {
+    color: $c1;
+}
+
+%c1-bg {
+    background-color: $c1;
+}
+
+%c2 {
+    color: $c2;
+}
+
+%c2-bg {
+    background-color: $c2;
+}
+
+%white {
+    color: $white;
+}
+
+%white-bg {
+    background-color: $white;
+}
+
+%black {
+    color: $black;
+}
+
+%black-bg {
+    background-color: $black;
+}
+
+%text-color {
+    color: $text-color;
+}
+
+%text-color-bg {
+    background-color: $text-color;
+}
+
+%title-color {
+    color: $title-color;
+}
+
+%title-color-bg {
+    background-color: $title-color;
+}
+
+%heading-font {
+    font-family: $heading_font;
+}
+
+%body-font {
+    font-family: $body_font;
+}
+
+%radius {
+    border-radius: 50%;
+}
+
+%radius-3 {
+    border-radius: 3px;
+}
+
+%radius-5 {
+    border-radius: 5px;
+}
+
+%radius-10 {
+    border-radius: 10px;
+}
+
+%radius-50 {
+    border-radius: 50px;
+}
+
+%box-shadow {
+    box-shadow: 0 0 30px rgba(#1868DE, 0.1);
+}
+
+%box-shadow2 {
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.05);
+}
+
+%box-shadow3 {
+    box-shadow: 0px 0px 90px rgba(0, 0, 0, 0.05);
+}

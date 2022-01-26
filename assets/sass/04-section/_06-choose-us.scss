@@ -1,0 +1,55 @@
+/* ************************
+   04.6: Choose Us
+   ********************* */
+
+   .chooseus-section {
+       margin-bottom: -166px;
+       @include tab {
+           margin-bottom: -126px;
+       }
+   }
+
+    .single-choose-us {
+        background-color: rgba(#6B58ED, 0.1);
+        padding: 70px 15px 67px;
+        @extend %radius-10;
+        margin-bottom: 30px;
+        .choose-us-icon {
+            margin-bottom: 40px;
+        }
+        .choose-us-content {
+            max-width: 264px;
+            margin: 0 auto;
+            h3 {
+                margin-bottom: 20px;
+            }
+        }
+
+        &.green-bg {
+            background-color: rgba($c2, 0.1);
+        }
+        &.yellow-bg {
+            background-color: rgba(#F76D00, 0.1);
+        }
+
+        &.style--two {
+            @extend %white-bg;
+            @extend %box-shadow3;
+            padding: 60px 45px 57px;
+            .choose-us-icon {
+                margin-bottom: 40px;
+            }
+            .choose-us-content {
+                max-width: initial;
+                margin: 0;
+                h3 {
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        &.style--three {
+            @extend %white-bg;
+            @extend %box-shadow3;
+            padding: 60px 15px 57px;
+        }
+    }

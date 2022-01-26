@@ -1,0 +1,61 @@
+/* ************************
+   04.8: Call to Action
+   ********************* */
+
+    .cta {
+        position: relative;
+        .cta-top {
+            position: absolute;
+            left: auto;
+            right: 9%;
+            top: 5px;
+            transform: translateY(-50%);
+            @include tab {
+                display: none;
+            }
+        }
+    }
+    .cta-content {
+        h2 {
+            font-size: 48px;
+            margin-bottom: 45px;
+            margin-top: -10px;
+            span {
+                @extend %c2;
+            }
+        }
+        &.text-white {
+            h2 {
+                @extend %white;
+            }
+        }
+        &.style--two {
+            h2 {
+                margin-bottom: 35px;
+            }
+            .cta-btn-group {
+                margin-bottom: 24px;
+            }
+        }
+        .cta-btn-group {
+            margin-bottom: 34px;
+        }
+    }
+
+    .cta-btn-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include mobileSm {
+            flex-direction: column;
+        }
+        .btn {
+            &:not(:last-child) {
+                margin-right: 20px;
+                @include mobileSm {
+                    margin-right: 0;
+                    margin-bottom: 14px;
+                }
+            }
+        }
+    }

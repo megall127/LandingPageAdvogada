@@ -1,0 +1,10 @@
+/* ************************
+   01.3: Color
+   ********************* */
+   @include colors($text-color, text-color);
+   @include colors($title-color, title-color);
+   @include colors($border-color, border-color);
+   @include colors($white, white);
+   @include colors($black, black);
+   @include colors($c1, c1);
+   @include colors($c2, c2);

@@ -1,0 +1,17 @@
+/* ************************
+   03.4: 404
+   ********************* */
+
+   .content-404 {
+      margin-top: 136px;
+      @include mobileMd {
+         margin-top: 160px;
+      }
+      img {
+         margin-bottom: 28px;
+      }
+      h3 {
+         @extend %white;
+         margin-bottom: 35px;
+      }
+   }

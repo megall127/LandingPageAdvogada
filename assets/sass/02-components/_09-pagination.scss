@@ -1,0 +1,60 @@
+/* ************************
+   02.9: Pagination
+   ********************* */
+
+   .pagination {
+      @include tab {
+         margin-top: -20px;
+      }
+      ul {
+         @extend %list-unstyled;
+      }
+      li {
+         &:not(:last-child) {
+            margin-right: 15px;
+         }
+         &:first-child {
+            a, span {
+                  transform: rotate(180deg);
+            }
+         }
+         a,
+         span {
+            width: 45px;
+            height: 45px;
+            line-height: 1;
+            position: relative;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            @extend %heading-font;
+            @extend %radius;
+            border: 1px solid $c1;
+            @extend %c1;
+            &.current {
+               @extend %c1-bg;
+               @extend %white;
+            }
+            svg path {
+                  @extend %trans3;
+                  fill: $c1;
+            }
+            &:hover,
+            &.active {
+               @extend %c1-bg;
+               @extend %white;
+
+               svg path {
+                  fill: $white;
+               }
+            }
+         }
+         &.nav-btn {
+            a.disabled {
+               cursor: not-allowed;
+               opacity: .5;
+            }
+         }
+      }
+   }

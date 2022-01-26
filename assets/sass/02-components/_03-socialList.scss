@@ -1,0 +1,53 @@
+/* ************************
+   02.3: Social List
+   ********************* */
+
+   .socials {
+      display: flex;
+      align-items: center;
+      a {
+         font-size: 18px;
+         &:not(:last-child) {
+            margin-right: 24px;
+         }
+         &:hover {
+            i {
+               @extend %c1;
+            }
+         }
+      }
+      &.style--two {
+         a {
+            i {
+               color: rgba(#000, .2);
+            }
+            &:hover {
+               i {
+                  @extend %c2;
+               }
+            }
+         }
+      }
+   }
+
+   .social-links {
+      a {
+         border: 1px solid $c1;
+         width: 40px;
+         height: 40px;
+         @extend %radius;
+         @extend %c1;
+         display: inline-flex;
+         align-items: center;
+         justify-content: center;
+         &:not(:last-child) {
+            margin-right: 10px;
+         }
+         &:hover {
+            @extend %c1-bg;
+            i {
+               @extend %white;
+            }
+         }
+      }
+   }
