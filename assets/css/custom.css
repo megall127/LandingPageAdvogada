@@ -1,14 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .yellow-tiitle{
-    color: #cdba6d;
+    color: #124943;
+    font-weight: 700;
+}
+.white-tiitle{
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.subtittle-custom{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    color: #e47b52;
+}
+.tittle-custom{
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: white;
 }
 
 .square{
     height: 300px;
-    width: auto;
-    background-color: #353e47;
+    width: 110%;
+    background-color: #f9e6dc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,8 +33,8 @@
 }
 .square1{
     height: 300px;
-    width: auto;
-    background-color: #323a43;
+    width: 110%;
+    background-color: #f4e1d8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,14 +42,20 @@
 }
 .square2{
     height: 300px;
-    width: auto;
-    background-color: #2e353d;
+    width: 110%;
+    background-color: #eddcd4;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.row-square{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: var(--bs-gutter-y);
+}
 .subTittle{
     font-size: 15px;
     font-family: 'Poppins', sans-serif;
@@ -42,26 +65,25 @@
 
 .boxTittle{
     font-size: 20px;
-    color: white;
+    color: rgb(0, 0, 0);
     z-index: 9;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
 }
 .linhaBox{
-    height: 1px;
-    width: 80px;
-    background-color: #cdba6d;
+    height: 5px;
+    width: 250px;
+    background-color: #e47b52;
     margin: 20px;
 }
 .boxSubTittle{
     width: 200px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 15px;
 }
 .boxSubTittleBlack{
-    width: 200px;
+    width: 300px;
     color: rgb(0, 0, 0);
     font-size: 15px;
-    font-family: 'Playfair Display', serif;
 }
 
 .mediaText{
@@ -83,10 +105,11 @@
 
 .img-custom{
     height: auto;
+    width: auto;
 }
 
 .bk-color{
-    background-color: #2e353d;
+    background-color: #124943;
 }
 .bk-color-white{
     background-color: #ffffff;
@@ -120,5 +143,35 @@
 @media screen and (max-width: 414px){
     .padding-footer{
         margin: 15px;
+    }
+}
+
+@media screen and (max-width: 971px){
+    .square{
+        height: 300px;
+        width: auto;
+        background-color: #f9e6dc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .square1{
+        height: 300px;
+        width: auto;
+        background-color: #f4e1d8;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+    .square2{
+        height: 300px;
+        width: auto;
+        background-color: #eddcd4;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }

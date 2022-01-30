@@ -118,7 +118,7 @@ h6 {
   margin: 0;
   font-weight: 700;
   line-height: calc(57 / 48);
-  font-family: 'Playfair Display', serif;
+  font-family: 'Poppins', sans-serif;
   color: #111111;
 }
 
@@ -816,7 +816,7 @@ small {
 }
 
 .white-bg, .header-main.sticky, .offcanvas-wrapper {
-  background-color: #303940;
+  background-color: rgba(255, 255, 255, 0.172);
 }
 
 .white-bo {
@@ -2416,15 +2416,16 @@ textarea.form-control {
 }
 
 .btn.btn-style4 {
-  background-color: #cdba6d;
-  border-color: #cdba6d;
+  background-color: #e47b52;
+  border-color: #e47b52;
   padding: 18px 38px;
+  border-radius: 20px;
 }
 
 .btn.btn-style4:hover {
   background-color: transparent;
-  border-color: #0364FF;
-  color: #0364FF;
+  border-color: #e47b52;
+  color: #e47b52;
 }
 
 .btn.btn-style4.btn-border {
@@ -3106,7 +3107,7 @@ textarea.form-control {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(48, 57, 64, 0.5);
+  background-color: rgba(255, 255, 255, 0.172);
   width: 100%;
   z-index: 9;
   position: absolute;
@@ -4173,6 +4174,7 @@ textarea.form-control {
 .footer-main {
   padding: 80px 0 20px;
   background-color: #353e47;
+  background-image:url(../img/background/landingpage-rodape.png) ;
 }
 
 @media only screen and (max-width: 991px) {
@@ -5134,7 +5136,7 @@ textarea.form-control {
 }
 
 .banner.style--four {
-  background-image: url(../img/background/juri.png);
+  background-image: url(../img/background/juri.jpg);
   background-repeat: no-repeat;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#123FC0', endColorstr='#1145D9',GradientType=1);
   padding-top: 190px;
